@@ -146,7 +146,7 @@ class _signUpScreenState extends State<signUpScreen> {
                 ),
               ),
               SizedBox(
-                height: 100,
+                height: 80,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
