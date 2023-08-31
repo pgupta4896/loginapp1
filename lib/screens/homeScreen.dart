@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/screens/LoginScreen.dart';
+//import 'package:image_picker/image_picker.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -74,7 +76,18 @@ class HomeScreen extends StatelessWidget {
           ),
           //Image.asset(""),
           Column(
-            children: [],
+            children: [ TextButton(
+                onPressed: () {
+                  Navigator.pop(context,
+                      MaterialPageRoute(builder: ((context) => LoginScreen())));
+                },
+                child: Text(
+                  "Logout",
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ))],
           ),
         ],
       )),
